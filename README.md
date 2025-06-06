@@ -2,9 +2,9 @@
 
 ## Writing own blogs made easier for everyone!
 
-<h2 align="center">
+<!-- <h2 align="center">
   <a href="https://soumyajitblogs.vercel.app/" target="_blank"></a>
-</h2>
+</h2> -->
 
 <div align="center">
   <img alt="Demo" src="./Extra/demo.gif" />

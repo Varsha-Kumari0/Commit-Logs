@@ -23,7 +23,7 @@ function about({ topics }) {
         <h2 className="text-3xl font-semibold text-gray-700 py-4 dark:text-gray-200">
           Hi,{" "}
           <span className="bg-indigo-400 text-white rounded px-1 dark:bg-indigo-500">
-            I’m Soumyajit
+            I’m Varsha
           </span>{" "}
           . Nice to meet you.
         </h2>
@@ -40,7 +40,7 @@ function about({ topics }) {
             <a
               rel="noopener noreferrer"
               target="_blank"
-              href="https://soumyajit.vercel.app/"
+              href="https://Varsha.vercel.app/"
             >
               See My Works
             </a>
@@ -52,7 +52,7 @@ function about({ topics }) {
               className="twitter-follow-button"
               rel="noopener noreferrer"
               target="_blank"
-              href="https://twitter.com/soumyajit4419"
+              href="https://twitter.com/Varsha4419"
             >
               Follow Me
             </a>

@@ -1,0 +1,112 @@
+[debug] [2025-06-06T15:07:45.362Z] ----------------------------------------------------------------------
+[debug] [2025-06-06T15:07:45.365Z] Command:       C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2025-06-06T15:07:45.366Z] CLI Version:   13.35.1
+[debug] [2025-06-06T15:07:45.367Z] Platform:      win32
+[debug] [2025-06-06T15:07:45.367Z] Node Version:  v18.17.0
+[debug] [2025-06-06T15:07:45.368Z] Time:          Fri Jun 06 2025 20:37:45 GMT+0530 (India Standard Time)
+[debug] [2025-06-06T15:07:45.369Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-06-06T15:07:45.380Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-06-06T15:07:45.381Z] > authorizing via signed-in user (varsha20046kumari@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\GitHub\CommitLogs
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2025-06-06T15:08:16.092Z] Checked if tokens are valid: true, expires at: 1749225983330
+[debug] [2025-06-06T15:08:16.093Z] Checked if tokens are valid: true, expires at: 1749225983330
+[debug] [2025-06-06T15:08:16.096Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2025-06-06T15:08:17.328Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2025-06-06T15:08:17.329Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project commit-logs-a6980 (Commit-Logs) 
+[info] 
+=== Dataconnect Setup
+[debug] [2025-06-06T15:08:20.642Z] Checked if tokens are valid: true, expires at: 1749225983330
+[debug] [2025-06-06T15:08:20.643Z] Checked if tokens are valid: true, expires at: 1749225983330
+[debug] [2025-06-06T15:08:20.643Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/commit-logs-a6980/billingInfo [none]
+[debug] [2025-06-06T15:08:24.922Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/commit-logs-a6980/billingInfo 200
+[debug] [2025-06-06T15:08:24.922Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/commit-logs-a6980/billingInfo {"name":"projects/commit-logs-a6980/billingInfo","projectId":"commit-logs-a6980","billingAccountName":"","billingEnabled":false}
+[info] i  dataconnect: ensuring required API sqladmin.googleapis.com is enabled... 
+[debug] [2025-06-06T15:08:24.924Z] Checked if tokens are valid: true, expires at: 1749225983330
+[debug] [2025-06-06T15:08:24.924Z] Checked if tokens are valid: true, expires at: 1749225983330
+[debug] [2025-06-06T15:08:24.925Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/commit-logs-a6980/services/sqladmin.googleapis.com [none]
+[debug] [2025-06-06T15:08:24.925Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/commit-logs-a6980/services/sqladmin.googleapis.com x-goog-quota-user=projects/commit-logs-a6980
+[debug] [2025-06-06T15:08:27.827Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/commit-logs-a6980/services/sqladmin.googleapis.com 200
+[debug] [2025-06-06T15:08:27.827Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/commit-logs-a6980/services/sqladmin.googleapis.com [omitted]
+[warn] !  dataconnect: missing required API sqladmin.googleapis.com. Enabling now... 
+[debug] [2025-06-06T15:08:27.829Z] Checked if tokens are valid: true, expires at: 1749225983330
+[debug] [2025-06-06T15:08:27.829Z] Checked if tokens are valid: true, expires at: 1749225983330
+[debug] [2025-06-06T15:08:27.829Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/commit-logs-a6980/services/sqladmin.googleapis.com:enable [none]
+[debug] [2025-06-06T15:08:27.829Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/commit-logs-a6980/services/sqladmin.googleapis.com:enable x-goog-quota-user=projects/commit-logs-a6980
+[debug] [2025-06-06T15:08:30.715Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/commit-logs-a6980/services/sqladmin.googleapis.com:enable 200
+[debug] [2025-06-06T15:08:30.715Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/commit-logs-a6980/services/sqladmin.googleapis.com:enable [omitted]
+[debug] [2025-06-06T15:08:40.717Z] Checked if tokens are valid: true, expires at: 1749225983330
+[debug] [2025-06-06T15:08:40.717Z] Checked if tokens are valid: true, expires at: 1749225983330
+[debug] [2025-06-06T15:08:40.717Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/commit-logs-a6980/services/sqladmin.googleapis.com [none]
+[debug] [2025-06-06T15:08:40.718Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/commit-logs-a6980/services/sqladmin.googleapis.com x-goog-quota-user=projects/commit-logs-a6980
+[debug] [2025-06-06T15:09:01.771Z] *** [apiv2] error from fetch(https://serviceusage.googleapis.com/v1/projects/commit-logs-a6980/services/sqladmin.googleapis.com, {"headers":{},"method":"GET"}): FetchError: request to https://serviceusage.googleapis.com/v1/projects/commit-logs-a6980/services/sqladmin.googleapis.com failed, reason: connect ETIMEDOUT 2404:6800:4007:821::200a:443
+[debug] [2025-06-06T15:09:06.788Z] Error: Timed out.
+    at Timeout._onTimeout (C:\Users\HP\AppData\Roaming\nvm\v18.17.0\node_modules\firebase-tools\lib\utils.js:269:49)
+    at listOnTimeout (node:internal/timers:569:17)
+    at process.processTimers (node:internal/timers:512:7)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-06-06T15:21:41.928Z] ----------------------------------------------------------------------
+[debug] [2025-06-06T15:21:41.932Z] Command:       C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2025-06-06T15:21:41.933Z] CLI Version:   13.35.1
+[debug] [2025-06-06T15:21:41.933Z] Platform:      win32
+[debug] [2025-06-06T15:21:41.934Z] Node Version:  v18.17.0
+[debug] [2025-06-06T15:21:41.935Z] Time:          Fri Jun 06 2025 20:51:41 GMT+0530 (India Standard Time)
+[debug] [2025-06-06T15:21:41.936Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-06-06T15:21:41.948Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-06-06T15:21:41.950Z] > authorizing via signed-in user (varsha20046kumari@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\GitHub\CommitLogs
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2025-06-06T15:22:21.729Z] Checked if tokens are valid: true, expires at: 1749225983330
+[debug] [2025-06-06T15:22:21.730Z] Checked if tokens are valid: true, expires at: 1749225983330
+[debug] [2025-06-06T15:22:21.733Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2025-06-06T15:22:24.939Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2025-06-06T15:22:24.940Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project commit-logs-a6980 (Commit-Logs) 
+[info] 
+=== Apphosting Setup
+[debug] [2025-06-06T15:22:39.361Z] Checked if tokens are valid: true, expires at: 1749225983330
+[debug] [2025-06-06T15:22:39.361Z] Checked if tokens are valid: true, expires at: 1749225983330
+[debug] [2025-06-06T15:22:39.362Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/commit-logs-a6980/billingInfo [none]
+[debug] [2025-06-06T15:22:50.587Z] *** [apiv2] error from fetch(https://cloudbilling.googleapis.com/v1/projects/commit-logs-a6980/billingInfo, {"headers":{},"method":"GET"}): FetchError: request to https://cloudbilling.googleapis.com/v1/projects/commit-logs-a6980/billingInfo failed, reason: getaddrinfo ENOTFOUND cloudbilling.googleapis.com
+[debug] [2025-06-06T15:22:55.609Z] Error: Timed out.
+    at Timeout._onTimeout (C:\Users\HP\AppData\Roaming\nvm\v18.17.0\node_modules\firebase-tools\lib\utils.js:269:49)
+    at listOnTimeout (node:internal/timers:569:17)
+    at process.processTimers (node:internal/timers:512:7)
+[error] 
+[error] Error: An unexpected error has occurred.
