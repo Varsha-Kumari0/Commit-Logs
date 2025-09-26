@@ -13,12 +13,7 @@ Commit-Logs is a full-stack blog platform that makes writing, sharing, and manag
 
 ---
 
-## 🚀 Live Demo
 
-<!-- Uncomment and add your deployed link below -->
-<!-- [View Live](https://your-deployed-link.vercel.app/) -->
-
----
 
 ## 🛠️ Tech Stack
 
