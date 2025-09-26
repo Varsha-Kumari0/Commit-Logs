@@ -7,9 +7,9 @@ npm run dev
 
 Commit-Logs is a full-stack blog platform that makes writing, sharing, and managing blogs easy for everyone. It features a modern UI, markdown-based content, user authentication, comments, likes, and more. The project is built with Next.js, React, Firebase, Redux, and Tailwind CSS.
 
-<div align="center">
+<!-- <div align="center">
   <img alt="Demo" src="./Extra/demo.gif" />
-</div>
+</div> -->
 
 ---
 
