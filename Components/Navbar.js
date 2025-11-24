@@ -6,7 +6,7 @@ import { HiSun, HiMoon } from "react-icons/hi";
 import { CgUserlane } from "react-icons/cg";
 import { AiOutlineGoogle } from "react-icons/ai";
 import { auth, provider } from "../Firebase/Firebase";
-import { signInWithPopup, signOut } from "firebase/auth";
+import { signInWithPopup, signInWithRedirect, signOut } from "firebase/auth";
 import { IoLogOutOutline } from "react-icons/io5";
 import { SiCodefactor } from "react-icons/si";
 import { IoMdArrowDropdown } from "react-icons/io";
@@ -74,7 +74,22 @@ function Navbar({ topics }) {
         }, 2000);
       })
       .catch((err) => {
-        console.log(err);
+        // If popup is blocked or fails, fall back to redirect sign-in
+        console.error("Sign-in popup failed:", err);
+        if (err && (err.code === "auth/popup-blocked" || err.code === "auth/cancelled-popup-request" || err.code === "auth/operation-not-allowed")) {
+          try {
+            signInWithRedirect(auth, provider);
+          } catch (redirectErr) {
+            console.error("Redirect sign-in also failed:", redirectErr);
+            setViewAlert(true);
+            setAlertMessage("Sign-in failed. Please allow popups or try again.");
+            setTimeout(() => setViewAlert(false), 3000);
+          }
+        } else {
+          setViewAlert(true);
+          setAlertMessage("Sign-in failed. Check console for details.");
+          setTimeout(() => setViewAlert(false), 3000);
+        }
       });
   };
 
