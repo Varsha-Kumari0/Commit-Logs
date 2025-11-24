@@ -22,11 +22,12 @@ export default async (req, res) => {
     if (!isFound) {
       const salt = bcrypt.genSaltSync(10);
       const hash = bcrypt.hashSync(clientIp, salt);
-      likeRef.add({ userIp: hash });
+      await likeRef.add({ userIp: hash });
     } else {
-      const res = await likeRef.doc(docId).delete();
+      await likeRef.doc(docId).delete();
     }
-    res.status(200).json({ message: "Successful" });
+
+    return res.status(200).json({ message: "Successful" });
   } else {
     res.status(304).json({ message: "Invalid Request" });
   }
