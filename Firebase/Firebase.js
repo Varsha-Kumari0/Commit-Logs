@@ -1,17 +1,18 @@
-// Import the functions you need from the SDKs you need
+// firebase.js — use env vars so Vercel can provide config
 import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 import { getAuth, GoogleAuthProvider } from "firebase/auth";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCULsPpKGQYj4sy6aRnXRIiHirATmcDyDk",
-  authDomain: "commit-logs-a6980.firebaseapp.com",
-  projectId: "commit-logs-a6980",
-  storageBucket: "commit-logs-a6980.firebasestorage.app",
-  messagingSenderId: "831657246243",
-  appId: "1:831657246243:web:1e45ecfbc15107e2237b96",
-  measurementId: "G-LDFRTX6XGM"
+  apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
+  authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID,
+  measurementId: process.env.NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID, // optional
 };
+
 const app = initializeApp(firebaseConfig);
 
 const provider = new GoogleAuthProvider();
